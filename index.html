@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css"> 
     <!-- Fonts Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=League Gothic' rel='stylesheet'>
@@ -80,16 +80,27 @@
                     <div class="about-text">
                         <p>
                             Mi nombre es Ángel Merino,
-                            Soy diseñador UXUI y también diseño estrategias de negocio y marketing. En definitiva formas más eficientes de llegar a los usuarios.<br>
-                            A lo largo de mi recorrido profesional he tratado siempre de mejorar los protocolos que inciden en el personal de la empresa y en los usuarios o clientes finales.<br>
-                            Debido a mi posición en estas empresas he podido estudiar muy de cerca la conducta de los usuarios y de ese modo he enfocado mi trabajo respecto a las necesidades del usuario para ser más eficiente. Es por ello que decidí formarme en concreto en el diseño de interfaces gráficas y experiencia de usuario. <br>
-                            Actualmente utilizo mi experiencia analizando usuarios, necesidades y diseñando estrategias de negocio con el diseño de interfaces gráficas.
-                            Mi propósito es diseñar herramientas digitales para los usuarios, que sean eficientes cómodas de usar y atractivas.
+
+
+Soy diseñador UXUI y también diseño estrategias de negocio y marketing. En definitiva, formas más eficientes de llegar a los usuarios.<br>
+
+
+A lo largo de mi recorrido profesional, he tratado siempre de mejorar los protocolos que inciden en el personal de la empresa y en los usuarios o clientes finales.<br>
+
+
+Debido a mi posición en estas empresas he podido estudiar muy de cerca la conducta de los usuarios y de ese modo he enfocado mi trabajo respecto a las necesidades del usuario para ser más eficiente. <br>Es por ello que decidí formarme en concreto en el diseño de interfaces gráficas y experiencia de usuario. <br><br>
+
+
+Actualmente utilizo mi experiencia analizando usuarios, necesidades y diseñando estrategias de negocio con el diseño de interfaces gráficas.<br>
+
+
+Mi propósito es diseñar herramientas digitales para los usuarios, que sean eficientes, cómodas de usar y atractivas.
                         </p>
                     </div>
                     <div class="about-button">
-                        <input type="button" value="Descargar CV" class="about-btn-1" download=""/>
-                        <input type="button" value="Ver más" class="about-btn-2"/>
+                        <form method="get" action="assets/img/Ángel M. Merino CV.pdf">
+                            <input type="submit" value="Descargar CV" class="about-btn-1"/>
+                        </form>    
                     </div>
                 </div>
             </div>
@@ -127,9 +138,11 @@
                     </div>
                 </div>
                 <div class="proyect">
-                    <div class="proyect-image">
-                        <img src="assets/img/reparadok.jpg">
-                    </div>
+                    <a href="project3.html">
+                        <div class="proyect-image">
+                            <img src="assets/img/reparadok.jpg">
+                        </div>
+                    </a>
                     <div class="proyect-desc">
                         <h2>REPARADOK</h2>
                         <p>
@@ -315,7 +328,7 @@ x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
         </div>
     </section>
     <hr class="spacing">
-<!-- INICIO DE SECCION - CONTACTO -->
+<!-- INICIO DE SECCION - CONTACTO 
     <section class="site-section" id="contact">
         <h1 class="section-title">Contacto</h1>
         <div class="contact-section">
@@ -370,8 +383,62 @@ x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
             </div>
         </div>
     </section>
-    -->
-    <!-- Bootstrap core JavaScript 
+-->
+    <section class="site-section" id="contact">
+        <div class="contact-section">
+            <div class="contact-col-1">
+                <ul class="contact-list">
+                    <li class="tel">
+                        <i class="fa-solid fa-phone fa-sm" style="color: #fff"></i>
+                        <span><a href="tel:+34 633 011 328">+34 633 011 328</a></span>
+                        <button onclick="copyToClipboard('+34 633 011 328', 1)" onmouseout="resetCopyMsg(1)" class="data-button">
+                            <i class="fa-solid fa-copy"></i>
+                        </button>
+                    <div class="copy-msg" id="copy-btn-1">
+                        <span class="copy-msg-1">Copiar</span>
+                        <span class="copy-msg-2">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+                     </div>
+                    </li>
+                    <li class="mail">
+                        <i class="fa-solid fa-envelope fa-sm" style="color: #fff"></i>
+                        <span><a href="mailto:amerinopalomo@gmail.com">amerinopalomo@gmail.com</a></span>
+                        <button onclick="copyToClipboard('amerinopalomo@gmail.com', 2)" onmouseout="resetCopyMsg(2)" class="data-button">
+                            <i class="fa-solid fa-copy"></i>
+                        </button>
+                        <div class="copy-msg" id="copy-btn-2">
+                            <span class="copy-msg-1">Copiar</span>
+                            <span class="copy-msg-2">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                         </div>
+                    </li>
+                    <li  class="locat">
+                        <i class="fa-sharp fa-solid fa-location-dot fa-sm" style="color: #fff;"></i>
+                        <span>Madrid, España</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-sep"></div>
+            <div class="contact-col-2" align="center">
+                <span>Copyright ©2023 Angel Merino Palomo. All rights reserved</span>
+            </div>
+            <div class="contact-sep"></div>
+            <div class="contact-col-3 networks">
+                <a>
+                    <i class="fa-solid fa-envelope env-network"></i>
+                </a>
+                <a>
+                    <i class="fa-brands fa-linkedin link-network"></i>
+                </a>
+                <a>
+                    <i class="fa-brands fa-square-behance"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+        <!-- Bootstrap core JavaScript 
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- jQuery core js | Do not Delete -->
