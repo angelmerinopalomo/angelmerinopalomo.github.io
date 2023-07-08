@@ -286,7 +286,7 @@ a:visited, a:link {
   }
   .hero-content h1 {
     width:80%;
-    padding-top:10%;
+    padding-top:30%;
     font-size: 75px;
     letter-spacing:15px;
   }
@@ -444,7 +444,11 @@ a:visited, a:link {
   background-color: #fff;
   color: #000;
 }
+/* SLIDER */
 
+
+
+/* END SLIDER */
 
 @media only screen and (max-width: 967px) {
   .about-section {
@@ -826,7 +830,8 @@ a:visited, a:link {
   margin-top:30px
 }
 
-.contact-col-2 span {
+.contact-col-1 {
+  margin-top: 15px
 }
 
 .contact-sep {
@@ -836,23 +841,24 @@ a:visited, a:link {
 }
 
 @media only screen and (max-width: 967px) {
-  .contact-col-1 ul {
-    margin-top: 20px;
+  .contact-col-1 {
+    display: none;
   }
   .contact-col-2 {
-    font-size: 15px;
-    margin-top:5px;
-    padding: 10px
-  }
-  .mail {
     display: none;
   }
-  .locat {
+  .contact-col-3 {
+    width: 100%;
+  }
+  .contact-col-3 a {
+    background-color: red;
+    padding: 0px 10px 0px 10px;
+    height: min-content;
+  }
+  .contact-sep {
     display: none;
   }
-  .tel span > a{
-    font-size: 13px;
-  }
+
 }
 /* ---------------------------------------------------- */
 /* -------------------- icons ---------------------- */

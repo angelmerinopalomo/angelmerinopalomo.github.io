@@ -38,6 +38,7 @@ $(function () {
 }());
 
 
+
 function copyToClipboard(text, btnId) {
     navigator.clipboard.writeText(text);
 
@@ -74,3 +75,4 @@ for (const card of cards) {
     card.classList.toggle('flipped');
   });
 }
+ 
